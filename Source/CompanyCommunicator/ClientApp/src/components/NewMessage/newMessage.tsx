@@ -883,15 +883,15 @@ class NewMessage extends React.Component<INewMessageProps, formState> {
     }
 
     private onBtnLinkChanged = (event: any) => {
-#        if (!(event.target.value === "" || event.target.value.toLowerCase().startsWith("https://"))) {
-#           this.setState({
-#                errorButtonUrlMessage: this.localize("ErrorURLMessage")
-#            });
-#        } else {
-#            this.setState({
-#                errorButtonUrlMessage: ""
-#            });
-#        }
+//        if (!(event.target.value === "" || event.target.value.toLowerCase().startsWith("https://"))) {
+//           this.setState({
+//                errorButtonUrlMessage: this.localize("ErrorURLMessage")
+//            });
+//        } else {
+//            this.setState({
+//                errorButtonUrlMessage: ""
+//            });
+//        }
 
         const showDefaultCard = (!this.state.title && !this.state.imageLink && !this.state.summary && !this.state.author && !this.state.btnTitle && !event.target.value);
         setCardTitle(this.card, this.state.title);
